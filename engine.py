@@ -11,7 +11,7 @@ from transformers import Trainer, TrainingArguments
 
 class engine:
     def __init__(self):
-        self.device = torch.device("cpu")
+        self.device = torch.device("cuda:1")
         # Model id to load the tokenizer
         self.model_id = "bert-base-uncased"
         # Load Tokenizer
